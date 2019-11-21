@@ -1,0 +1,55 @@
+
+<div class="card">
+    <div class="card-header">
+      <strong>News Post</strong> Admins
+    </div>
+    <div class="card-body">
+      <form (submit)="Add($event)"action="" class="form-horizontal ng-untouched ng-pristine ng-valid" enctype="multipart/form-data" method="post" novalidate="">
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="text-input">News Title</label>
+          <div class="col-md-9">
+            <input class="form-control" id="text-input" name="text-input" placeholder="title" type="text">
+            <span class="help-block">This is a help text</span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="email-input">Video Url</label>
+          <div class="col-md-9">
+            <input autocomplete="email" class="form-control" id="email-input" name="email-input" placeholder="video url" type="email">
+            <span class="help-block">Pleasse Enter youtube video url</span>
+          </div>
+        </div>
+        
+    
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="textarea-input">Description</label>
+          <div class="col-md-9">
+            <textarea class="form-control" id="textarea-input" name="textarea-input" placeholder="Content.." rows="9"></textarea>
+          </div>
+        </div>
+        
+       
+        
+        
+      
+        
+        
+
+        <div class="form-group row">
+          <label class="col-md-3 col-form-label" for="file-input">Image</label>
+          <div class="col-md-9">
+            <input id="file-input" name="file-input" type="file">
+          </div>
+
+          <div class="valid-feedback">
+            Input is valid.
+            </div>
+
+        </div>
+        
+      </form>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-sm btn-primary" type="submit"><i class="fa fa-dot-circle-o"></i> Submit</button>
+    </div>
+  </div>
